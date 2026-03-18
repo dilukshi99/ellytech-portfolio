@@ -1,0 +1,549 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#0c0c2e;
+color:white;
+}
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height: 70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 8%;
+
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+
+border-bottom:1px solid rgba(255,255,255,0.2);
+
+z-index:1000;
+}
+.navbar{
+
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#4da6ff;
+}
+
+.menu-btn{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* Hero */
+
+
+.hero{
+height:90vh;
+background:url(images/home1.png) center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding-top:50px;
+}
+
+
+.hero h1{
+font-size:98px;
+font-family: 'Times New Roman', Times, serif;
+margin:10px 0;
+font-weight:500;
+text-shadow: #1d1d23 1px 1px 3px;
+margin-top: -50px;
+}
+
+.hero p{
+max-width:800px;
+letter-spacing: 1px;
+margin:auto;
+font-size:18px;
+text-shadow: #1d1d23 1px 1px 2px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+.hero-devices{
+position:absolute;
+bottom:-80px;
+width:600px;
+}
+.portfolio {
+  background-image: url(images/aboutbacim.png);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(2, 350px); /* Slightly wider for better fit */
+  justify-content: center;
+  column-gap: 120px; /* More space side-to-side */
+  row-gap: 80px;    /* More space top-to-bottom */
+  padding: 60px;
+}
+
+.card {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Container for text to add padding */
+.card-content {
+  padding: 20px 25px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-family: 'Georgia', serif; /* Matching the serif font in your image */
+  color: #111;
+  text-align: center\;
+}
+
+/* The "Dash" lines */
+.card hr {
+  border: 1px solid #eee; /* Light gray line */
+  margin: 10px 0;
+  border-top: 1px solid #eee; /* Light gray line */
+  margin: 10px 0;
+}
+
+.card p {
+  color: #444;
+  font-size: 18px;
+  margin: 10px 0;
+  font-family: 'Georgia', serif;
+  text-align: start;
+}
+
+.view-project-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 40px;
+  /* Gradient to match the "View Project" button in your image */
+  background: linear-gradient(90deg, #a192f7, #8171f2); 
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.view-project-btn:hover {
+  opacity: 0.9;
+  background: #7161e2;
+}
+
+
+
+/* CTA */
+
+.cta {
+  /* Background image */
+  background-image: url('images/Rectangle 48.png');
+  background-size: cover;       /* Makes image cover entire section */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+
+  /* Optional styling for text readability */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cta h1{
+font-size:48px;
+font-family: 'Times New Roman', Times, serif; 
+margin-bottom:20px;
+}
+
+.cta p{
+font-size:28px; 
+margin-bottom: 10px;
+}
+
+
+.cta .btn-primary{
+ background:#2d7fff;
+border:none;
+padding:12px 25px;
+color:white;
+border-radius:6px;
+margin-right:10px;
+}
+.cta .btn-secondary{
+background:transparent;
+border:1px solid white;
+padding:12px 25px;
+color:white;
+border-radius:6px;
+}
+button{
+transition:0.3s;
+}
+
+button:hover{
+
+transform:scale(1.05);
+opacity:0.9;
+
+}
+
+/* FOOTER */
+
+.footer{
+background:linear-gradient(90deg,#1e1e7c,#3c2db5,#8383ad);
+padding:70px 10%;
+color:white;
+}
+
+.footer-container{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:40px;
+}
+
+/* LOGO AREA */
+
+.footer-logo{
+width:160px;
+margin-bottom:15px;
+}
+
+.footer-about p{
+margin:15px 0;
+line-height:1.6;
+}
+
+.footer-social{
+margin-top:20px;
+}
+
+.footer-social a{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:40px;
+height:40px;
+background:white;
+color:#2d2db0;
+border-radius:50%;
+margin-right:10px;
+font-size:18px;
+text-decoration:none;
+}
+.footer-social a:hover{
+background:#4da6ff;
+color:white;
+transform:scale(1.1);
+transition:0.3s;
+}
+
+/* LINKS */
+
+.footer-links h3,
+.footer-services h3,
+.footer-contact h3{
+margin-bottom:15px;
+border-bottom:2px solid rgba(255,255,255,0.4);
+display:inline-block;
+padding-bottom:5px;
+}
+
+.footer-links a{
+display:block;
+color:white;
+text-decoration:none;
+margin:8px 0;
+transition:0.3s;
+line-height: 1.5;
+}
+
+.footer-links a:hover{
+color:#8fd3ff;
+}
+
+/* SERVICES */
+
+.footer-services p{
+margin:8px 0;
+line-height: 1.5;
+}
+
+/* CONTACT */
+
+.footer-contact h3{
+margin-bottom:-5px;
+border-bottom:2px solid rgba(255,255,255,0.4);
+line-height: 1.8;
+}
+
+.footer-contact p{
+    margin:10px 0;
+line-height: 1.5;
+}
+.footer-contact i{
+margin-right:8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-bottom hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+    width: 90%;
+    margin: 0 auto 15px auto;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+@media (min-width:769px) and (max-width:1024px){
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.portfolio{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap:40px;
+    padding:50px;
+}
+
+}
+
+@media (max-width:768px){
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:250px;
+    height:100vh;
+    background:#0c0c2e;
+    flex-direction:column;
+    padding-top:80px;
+    transition:0.4s;
+}
+
+nav.active{
+    right:0;
+}
+
+nav a{
+    display:block;
+    padding:15px 25px;
+    margin:0;
+}
+
+.menu-btn{
+    display:block;
+}
+
+/* HERO */
+.hero{
+    height:70vh;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:42px;   /* FIX */
+    margin-top:0;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+/* PORTFOLIO GRID */
+.portfolio{
+    grid-template-columns: 1fr;   /* ONE COLUMN */
+    padding:40px 20px;
+    row-gap:40px;
+}
+
+/* CARD */
+
+.card{
+    width:100%;
+    max-width:none;
+}
+.card h3{
+    font-size:20px;
+}
+
+.card p{
+    font-size:15px;
+}
+
+.view-project-btn{
+    padding:10px 25px;
+    font-size:14px;
+}
+
+/* CTA */
+.cta{
+    padding:60px 20px;
+}
+
+.cta h1{
+    font-size:28px;
+}
+
+.cta p{
+    font-size:16px;
+}
+
+
+
+
+/* OFFER */
+.offer h2{
+    font-size:28px;
+}
+
+.offer-card{
+    width:150%;
+    max-width:400px;
+}
+.offer img{
+    width:50%;
+    
+}
+.offer-cards h3{
+    font-size:28px;
+}
+.offer-card p{
+    font-size:18px;
+    text-align: center;
+}
+
+
+/* TEAM SECTION */
+.team-title{
+    font-size:32px;
+}
+
+.team-container{
+    flex-direction:column;
+}
+
+.team-images{
+    flex-direction:row;
+    align-items:center;
+}
+
+.team-photo{
+    width:100%;
+    max-width:250px;
+}
+
+.team-text{
+    text-align:center;
+}
+
+.team-line{
+    width:100%;
+}
+
+/* CONTACT */
+.contact-title{
+    font-size:32px;
+}
+
+.contact-card{
+    padding:20px;
+}
+
+.contact-card p{
+    font-size:14px;
+}
+
+/* FOOTER */
+.footer{
+    padding:50px 20px;
+}
+.footer-social{
+    flex-direction: column;
+    justify-content:center;
+    gap:15px;
+}
+.footer-social p{
+    margin-right:0;
+    font-size: 15px;
+}
+
+.footer-social a{
+    width:35px;
+    height:35px;
+    font-size:16px;
+}
+
+.footer-container{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:30px;
+}
+
+.footer-links a{
+    margin-left:0;
+}
+
+}
+
+html{
+scroll-behavior:smooth;
+}
